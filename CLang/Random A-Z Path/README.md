@@ -1,4 +1,4 @@
-Source: KNK C chapter08 project 09
+## Source: KNK C chapter08 project 09
 
 Write a program that generates a "random walk" across a 10x10 array.
 The array will contain characters (all '.' initially). The program
@@ -6,6 +6,7 @@ must randomly "walk" from element to element, always going up, down,
 left, or right by one element. The elements visited by the program
 will be labeled with the letters A through Z, in the order visited.
 Here's an example of the desired output:
+```
   A . . . . . . . . .
   B C D . . . . . . .
   . F E . . . . . . .
@@ -16,6 +17,7 @@ Here's an example of the desired output:
   L M P Q . . . W X .
   . N O . . . . . . .
   . . . . . . . . . .
+```
 Hint: Use the srand and rand functions (see deal.c) to generate random
 numbers. After generating a number, look at its remainder when divided
 by 4. There are four possible values for the remainder (0, 1, 2, and 3)
@@ -25,6 +27,7 @@ us to an element that already has a letter assigned. If either condition
 is violated, try moving in another direction. If all four directions are
 blocked, the program must terminate. Here's an example of a premature
 termination:
+```
   A B G H I . . . . .
   . C F . J K . . . .
   . D E . M L . . . .
@@ -35,4 +38,5 @@ termination:
   . . . . . . . . . .
   . . . . . . . . . .
   . . . . . . . . . .
+```
 Y is blocked on all four sides, so there's no place to put Z.
