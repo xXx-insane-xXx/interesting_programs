@@ -33,5 +33,6 @@ calculate the encrypted version of an upper-case letter, where `ch` stores the
 letter and `n` stores the shift amount. (You'll need a similar expression for
 lower-case letters.)
 
-
+### Note
+I used a different expression to handle wrapping.
 
